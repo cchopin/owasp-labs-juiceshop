@@ -1,4 +1,4 @@
-# Démonstration : Injections SQL et Méthodes de Remédiation
+# Démonstration : Injections SQL et méthodes de remédiation
 
 ---
 
