@@ -1,14 +1,5 @@
 # Démonstration : Injections SQL et Méthodes de Remédiation
 
-## Table des matières
-
-1. [Introduction aux injections SQL](#introduction)
-2. [Démonstration pratique : OWASP Juice Shop](#demo-juice-shop)
-3. [Injections SQL Out-of-Band (OOB)](#oob-injection)
-4. [Remédiation et bonnes pratiques](#remediation)
-5. [Exemples de code sécurisé en Java](#exemples-java)
-6. [Recommandations architecturales](#recommandations)
-
 ---
 
 ## 1. Introduction aux injections SQL {#introduction}
