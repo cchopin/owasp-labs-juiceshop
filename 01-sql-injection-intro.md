@@ -2,7 +2,7 @@
 
 ---
 
-## 1. Introduction aux injections SQL {#introduction}
+## 1. Introduction aux injections SQL 
 
 Les injections SQL représentent l'une des vulnérabilités les plus critiques dans les applications web. Elles permettent à un attaquant de manipuler les requêtes SQL pour :
 
@@ -20,7 +20,7 @@ Les injections SQL représentent l'une des vulnérabilités les plus critiques d
 
 ---
 
-## 2. Démonstration pratique : OWASP Juice Shop {#demo-juice-shop}
+## 2. Démonstration pratique : OWASP Juice Shop
 
 ### Configuration de l'environnement
 
@@ -276,7 +276,7 @@ L'attaquant peut potentiellement s'octroyer des privilèges administrateur.
 
 ---
 
-## 4. Remédiation et bonnes pratiques {#remediation}
+## 4. Remédiation et bonnes pratiques 
 
 ### Principe fondamental : Ne jamais faire confiance aux entrées utilisateur
 
@@ -404,7 +404,7 @@ public class UserService {
     }
 }
 ```
-##### 5. Recommandations architecturales {#recommandations}
+##### 5. Recommandations architecturales 
 
 ### 1. Utiliser des identifiants générés par la base
 
